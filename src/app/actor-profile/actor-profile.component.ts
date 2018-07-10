@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, SimpleChange, OnDestroy } from '@angular/core';
-import { Actor } from '../actor';
+import { Actor } from './actor';
 import { Film } from '../actor-films/film';
-import { AppService } from '../../services/app.service';
+import { AppService } from '../services/app.service';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 @Component({
@@ -29,7 +29,6 @@ export class ActorProfileComponent implements OnInit,OnDestroy {
       let id = +params['id']; // (+) converts string 'id' to a number
       this.service.getActor(id).subscribe(res => 
         {
-          console.log(res);
           if (res && Object.keys(res).length > 0) {
             this.actor = res;
             if (this.actor) {

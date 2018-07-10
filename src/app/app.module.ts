@@ -7,9 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { AppService } from './services/app.service';
-import { ActorDetailsComponent } from './actor-details/actor-details.component';
-import { ActorFilmsComponent } from './actor-details/actor-films/actor-films.component';
-import { ActorProfileComponent } from './actor-details/actor-profile/actor-profile.component';
+import { ActorFilmsComponent } from './actor-films/actor-films.component';
+import { ActorProfileComponent } from './actor-profile/actor-profile.component';
 
 @NgModule({
   imports: [
@@ -19,7 +18,6 @@ import { ActorProfileComponent } from './actor-details/actor-profile/actor-profi
   ],
   declarations: [
     AppComponent,
-    ActorDetailsComponent,
     ActorFilmsComponent,
     ActorProfileComponent
   ],

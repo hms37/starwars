@@ -1,8 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AppService } from './services/app.service';
-import { Actor } from './actor-details/actor';
-import { Router } from '@angular/router';
-import { ActorDetailsComponent } from './actor-details/actor-details.component';
+import { Actor } from './actor-profile/actor';
 
 @Component({
   selector: 'app-root',

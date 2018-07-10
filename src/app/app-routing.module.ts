@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ActorProfileComponent } from './actor-details/actor-profile/actor-profile.component';
-import { ActorFilmsComponent } from './actor-details/actor-films/actor-films.component';
+import { ActorProfileComponent } from './actor-profile/actor-profile.component';
+import { ActorFilmsComponent } from './actor-films/actor-films.component';
 
 const routes: Routes = [
   { path: 'profile/:id', component: ActorProfileComponent },
