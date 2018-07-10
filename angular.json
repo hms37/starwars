@@ -72,10 +72,7 @@
               "src/styles.css"
             ],
             "scripts": [],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ]
+            "assets": []
           }
         },
         "lint": {
