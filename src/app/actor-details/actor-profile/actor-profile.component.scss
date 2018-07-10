@@ -1,0 +1,70 @@
+.container {
+    .actor-profile{
+        table {width: 100%;
+            background-color: #243446;
+            box-shadow: 3px 4px 14px orange;
+            color: orange;
+            opacity: 0.8;
+        }
+        table>tbody>tr>td
+        label {
+            margin-bottom : 0px !important;
+        }
+        .profile {
+            border: 1px solid white;
+              border-left: 0px;
+              border-right:0px;
+              box-shadow: 3px 4px 14px orange;
+              padding: 12px;
+              i {
+                padding: 0px 12px 0px 0px;
+              }
+              span {
+                  font-weight: bold;
+              }
+              background-color: #243446;
+              opacity: 0.8;
+              color: orange;
+            text-align:center;
+        }
+    } 
+
+.actor-films {
+    .films {
+            color: #f95a5a;
+            text-align:center;
+            span {
+                font-weight: bold;
+            }
+            i {
+                padding: 0px 12px;
+            }
+    }
+    .films,.film-card {
+        border: 1px solid white;
+              border-left: 0px;
+              border-right:0px;
+              box-shadow: 3px 4px 14px #f95a5a;
+              padding: 12px;
+              background-color: #243446;
+              opacity: 0.8;
+    }
+    .film-card {
+
+        p {
+            cursor: pointer;
+            margin: 0px !important;
+            color:#f95a5a;
+
+        }
+    }
+        .selected {
+            background: linear-gradient(to left, rgba(255,0,0,0), rgb(89, 207, 234)) !important;
+            opacity: 0.7;
+          }
+    
+}
+
+}
+
+

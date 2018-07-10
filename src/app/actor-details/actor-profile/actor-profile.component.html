@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row">
+    <div class="actor-profile col-md-6" *ngIf="actor">
+      <div class="col-md-12">
+        <div class="profile">
+            <i class="fa fa-user"> </i>
+            <span>Profile</span>
+        </div>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>
+                <label>Height: </label>
+              </td>
+              <td>{{actor.height}}</td>
+            </tr>
+            <tr>
+              <td>
+                <label>Mass: </label>
+              </td>
+              <td>{{actor.mass}}</td>
+            </tr>
+            <tr>
+              <td>
+                <label>Hair Color:</label>
+              </td>
+              <td>{{actor.hair_color}}</td>
+            </tr>
+            <tr>
+              <td>
+                <label> Skin Color:</label>
+              </td>
+              <td>{{actor.skin_color}}</td>
+            </tr>
+            <tr>
+              <td>
+                <label>Eye Color:</label>
+              </td>
+              <td>{{actor.eye_color}}</td>
+            </tr>
+            <tr>
+              <td>
+                <label>Birth Year:</label>
+              </td>
+              <td>{{actor.birth_year}}</td>
+            </tr>
+            <tr>
+              <td>
+                <label>Gender:</label>
+              </td>
+              <td>{{actor.gender}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-6 actor-films">
+      <div class="films">
+        <i class="fa fa-film"> </i>
+        <span>Films</span>
+      </div>
+      <div class="film-card col-md-12" (click)="onSelect(film)" [class.selected]="film === selectedFilm" *ngFor="let film of films">
+        <p >{{film.title}} </p>
+      </div>
+    </div>
+  </div>
+  <div></div>
+  <div>
+    <app-actor-films [film]="selectedFilm"></app-actor-films>
+  </div>
+</div>

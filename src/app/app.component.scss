@@ -1,0 +1,171 @@
+.starWarDetail {
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%; 
+    background-image: url('http://wallpapercave.com/wp/pEeUsp1.jpg');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        background-image: url(https://lumiere-a.akamaihd.net/v1/images/solo-han-chewbacca-falcon-cockpit-2-header-2x_fba3376f.jpeg?region=0%2C0%2C2400%2C444);
+        max-width: 100%;
+        max-height: 300px;
+        margin: 0 auto;
+        padding: 1.5%;
+        box-sizing: border-box;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        z-index: -1;
+        background-position: center;
+        .col-sm-12 {
+            margin: auto;
+            width: 60%;
+            text-align: center;
+        }
+        .logo {
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+            max-height: 200px;
+        }
+    }
+    .masterView {
+        table {
+            tbody {
+                th {
+                    color: #d2da0d;
+                    padding: 20px;
+                    font-size: 28px;
+                    text-shadow: 3px 2px #736e0c;
+                }
+                td {
+                    padding:10px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 15px;
+                    font-family: DIN, Helvetica, Arial, sans-serif;
+                }
+                a {
+                    color: white;
+                }
+                td.serialNum {
+                    text-align:center !important;
+                    span {
+                        padding: 5px 10px;
+                        border: 1px solid #edec51;
+                        border-radius: 20px;}
+                }
+                tr:hover td, a:hover {
+                    color: #edec51;
+                    cursor: pointer;
+
+                }
+
+                
+                
+            }
+        }
+        footer{
+            color: #edec51;
+            text-align: center;
+            padding:15px;
+            span {
+                padding: 0px 15px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            button {
+                cursor: pointer;
+                background: black;
+                color:white;
+                outline: none;
+                border: 1px solid white;
+                border-radius: 4px;
+                box-shadow: 5px white;
+            }
+            button:hover {
+                background: white;
+                color:black;
+                border: 1px solid black;
+                border:focus{
+                    outline: 0;
+                }
+            }
+        }
+        footer,table {
+            background: #282727;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    .selected {
+        background: linear-gradient(to left, rgba(255,0,0,0), rgb(184, 202, 19)) !important;
+        opacity: 0.7;
+      }
+    .detailView {
+        .container1 {
+            padding: 20px 20px 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          h2 {
+            font-family: 'Audiowide', fantasy;
+          text-transform: uppercase;
+          text-align: center;
+          text-shadow: 0 4px 5px rgba(60,72,96,.5);
+          color: #f0edf2;
+          -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+          -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: #fff;
+            text-shadow: 
+           white 0px 0px 175px, #e8e214 0px 0px 10px, white 0px 0px 1px, #f3eb03 0px 0px 100px, #fdea00 0px 0px 250px;
+          }
+        }
+        .initialLoad {
+            text-align:center;
+            color:white;
+            margin:200px;
+            i {
+                font-size: 55px;
+                color: #edec51;
+            }
+        }
+    }
+
+    @-webkit-keyframes zoomIn {
+        from {
+          opacity: 0;
+          -webkit-transform: scale3d(.3, .3, .3);
+          transform: scale3d(.3, .3, .3);
+        }
+      
+        50% {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes zoomIn {
+        from {
+          opacity: 0;
+          -webkit-transform: scale3d(.3, .3, .3);
+          transform: scale3d(.3, .3, .3);
+        }
+      
+        50% {
+          opacity: 1;
+        }
+      }
+
+      
+    
+}
