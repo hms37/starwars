@@ -1,6 +1,6 @@
-# Workstride
+# Starwars
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. This is project displays about the characters and their history and legends in Starwars. Features used in this project are modularity advantage of Angular, Typescript, CSS preprocessors, various ways of component communication and Observables, Pagination, reusable components and services.
 
 ## Development server
 
